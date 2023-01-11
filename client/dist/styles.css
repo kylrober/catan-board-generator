@@ -1,25 +1,26 @@
 .page {
-  display: grid;
+  /* display: grid; */
   align-items: center;
   justify-content: center;
   background-color: #78C5DC;
-  height: 500px;
+  height: 450px;
 }
 
 .board {
-
+  margin: 25px;
 }
 
 .title {
   margin: 0;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .author {
   text-align: center;
+  font-size: 25px;
   margin: 0;
-  font-size: 30px;
+  padding-bottom: 10px;
 }
 
 .btn-div {
