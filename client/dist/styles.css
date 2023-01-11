@@ -2,33 +2,170 @@
   display: grid;
   align-items: center;
   justify-content: center;
+  background-color: #78C5DC;
+  height: 500px;
+}
+
+.board {
+
 }
 
 .title {
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
 }
 
 .author {
   text-align: center;
+  margin: 0;
+  font-size: 30px;
+}
+
+.btn-div {
+  text-align: center;
+  margin: 5px;
+}
+
+.btn {
+  width: fit-content;
 }
 
 .row {
-  /* display: grid;
-  align-items: center;
-  justify-content: center; */
-  /* text-align: center; */
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.piece {
-  border: 1rem solid;
+  position: relative;
+  text-align: center;
 }
 
 .p0 {
-  color: tan;
+  background-color: #EADDCA;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
 }
 
 .p1 {
-  color: grey;
+  background-color: gray;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
 }
+
+.p2 {
+  background-color: #cc474b;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p3 {
+  background-color: forestgreen;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p4 {
+  background-color: #FFCC00;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p5{
+  background-color: seashell;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p6 {
+  background-color: #EADDCA;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p7 {
+  background-color: gray;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p8 {
+  background-color: #cc474b;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p9 {
+  background-color: forestgreen;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p10 {
+  background-color: seashell;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p11 {
+  background-color: gray;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p12 {
+  background-color: #cc474b;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p13 {
+  background-color: forestgreen;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p14 {
+  background-color: #FFCC00;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p15{
+  background-color: seashell;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p16 {
+  background-color: #EADDCA;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p17 {
+  background-color: gray;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p18 {
+  background-color: #cc474b;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
