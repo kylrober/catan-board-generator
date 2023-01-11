@@ -1,7 +1,6 @@
 import React from 'react';
 import Board from './Board.jsx';
 import _ from 'underscore';
-// import '../styles.css'
 
 const { useState, useEffect } = React;
 
@@ -20,7 +19,6 @@ function App() {
     const newResources = _.shuffle(resources)
     setResources(newResources);
     fixDesert(newResources, newNums);
-    // getColors(newResources);
   }
 
   const getColors = (res) => {
@@ -56,7 +54,6 @@ function App() {
       }
     }
     for (let j = 0; j < sources.length; j++) {
-      // find desert and swap with index
       if (sources[j] === 'desert') {
         let temp = sources[index];
         sources[index] = 'desert';
@@ -70,14 +67,16 @@ function App() {
   return (
     <div className="page">
       <h1 className="title">catan board generator</h1>
-      <h3 className="author">by kyle</h3>
+      <h3 className="author">by kyl</h3>
       <div className="btn-div">
         <button className="btn" onClick={shuffleNumbers}>generate random board</button>
       </div>
       <div className="btn-div">
         <button className="btn">save this board</button>
       </div>
-      < Board numbers={numbers} resources={resources} colors={colors}/>
+      <div>
+        < Board numbers={numbers} resources={resources} colors={colors} />
+      </div>
     </div>
   );
 }
