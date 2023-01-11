@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Piece1({number, resource}) {
+function Piece1({number, resource, color}) {
   return (
-    <span className="p1">
-      {number} {resource}&nbsp;
+    <span className="p1" style={{background: `${color}`}}>
+      {number} {resource}
     </span>
   );
 }

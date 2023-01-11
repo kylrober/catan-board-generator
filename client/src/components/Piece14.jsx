@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Piece14({number, resource}) {
+function Piece14({number, resource, color}) {
   return (
-    <>
-      {number} {resource}&nbsp;
-    </>
+    <span className="p14" style={{background: `${color}`}}>
+      {number} {resource}
+    </span>
   );
 }
 
