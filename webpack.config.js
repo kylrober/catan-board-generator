@@ -26,10 +26,14 @@ module.exports = {
             'css-loader'
           ]
       },
-    ]
+      {
+        test: /.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'assets/resource',
+      },
+    ],
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.ts']
+    extensions: ['', '.js', '.jsx', '.ts', '.png']
   },
   plugins: [
     new HtmlWebpackPlugin({
