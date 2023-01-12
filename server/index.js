@@ -1,14 +1,17 @@
 const express = require('express');
+const router = require('./router.js');
 const path = require('path');
-require('dotenv').config({path: path.join(__dirname, '../.env')});
+require('dotenv').config();
 
 const app = express();
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true}));
 
-const router = require('./router.js');
+// console.log('path ', path.join(__dirname, '../client/dist'));
 
-app.use(router);
+app.use(express.static(path.join(__dirname, '../client/dist')));
+app.use('/', router);
 
 const PORT = process.env.PORT ?? 3000;
 
