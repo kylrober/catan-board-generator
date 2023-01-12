@@ -1,5 +1,6 @@
 import React from 'react';
 import Board from './Board.jsx';
+import Ports from './Ports.jsx';
 import _ from 'underscore';
 import axios from 'axios';
 
@@ -8,18 +9,32 @@ const { useState, useEffect } = React;
 function App() {
   const [numbers, setNumbers] = useState([0, 2, 3, 3, 4, 4, 5, 5, 6, 6, 8, 8, 9, 9, 10, 10, 11, 11, 12]);
   const [resources, setResources] = useState(['desert', 'stone', 'stone', 'stone', 'brick', 'brick', 'brick', 'wood', 'wood', 'wood', 'wood', 'wheat', 'wheat', 'wheat', 'wheat', 'sheep', 'sheep', 'sheep', 'sheep']);
+  const [ports, setPorts] = useState(['31any', '31any', '31any', '31any', '21stone', '21brick', '21wood', '21wheat', '21sheep']);
+  const [portImgs, setPortImgs] = useState(['../assets/31any.png', '../assets/31any.png', '../assets/31any.png', '../assets/31any.png', '../assets/21stone.png', '../assets/21brick.png', '../assets/21wood.png', '../assets/21wheat.png', '../assets/21sheep.png']);
   const [colors, setColors] = useState([]);
 
   const shuffleNumbers = () => {
     const newNumbers = _.shuffle(numbers);
     setNumbers(newNumbers);
     shuffleResources(newNumbers);
+    shufflePorts();
+    shufflePortImgs();
   }
 
   const shuffleResources = (newNums) => {
     const newResources = _.shuffle(resources)
     setResources(newResources);
     fixDesert(newResources, newNums);
+  }
+
+  const shufflePorts = () => {
+    const newPorts = _.shuffle(ports);
+    setPorts(newPorts);
+  }
+
+  const shufflePortImgs = () => {
+    const newPortImgs = _.shuffle(portImgs);
+    setPortImgs(newPortImgs);
   }
 
   const getColors = (res) => {
@@ -99,6 +114,9 @@ function App() {
       </div>
       <div>
         < Board numbers={numbers} resources={resources} colors={colors} />
+      </div>
+      <div>
+        < Ports ports={ports} portImgs={portImgs} />
       </div>
     </div>
   );
