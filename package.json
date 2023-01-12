@@ -4,8 +4,11 @@
   "description": "",
   "main": "./client/index.jsx",
   "scripts": {
-    "dev": "webpack serve",
-    "build": "webpack",
+    "start": "node ./server/index.js",
+    "start-dev": "nodemon /server",
+    "mo": "npx nodemon --watch server server/index.js & npx webpack --watch",
+    "dev": "webpack-dev-server",
+    "build": "webpack --config webpack.config.js -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,15 +23,24 @@
   },
   "homepage": "https://github.com/kylrober/catan-board-generator#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node": "^19.3.0",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hexagon": "^1.1.3",
+    "underscore": "^1.13.6"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",
+    "nodemon": "^2.0.20",
+    "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"

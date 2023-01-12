@@ -19,10 +19,17 @@ module.exports = {
           }
         }
       },
+      {
+          test: /\.css$/,
+          use: [
+            'style-loader',
+            'css-loader'
+          ]
+      },
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.ts']
   },
   plugins: [
     new HtmlWebpackPlugin({
