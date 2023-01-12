@@ -3,7 +3,7 @@
   justify-content: center;
   /* background-color: #78C5DC; */
   background-color: #4fa6eb;
-  height: 700px;
+  height: 850px;
   width: 100%;
 }
 
@@ -53,4 +53,14 @@
   stroke-width: 3px;
   margin-left: -20px;
   margin-right: -20px;
+}
+
+.ports {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.place {
+  font-size: 20px;
+  padding-bottom: 20px;
 }
