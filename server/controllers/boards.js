@@ -16,10 +16,10 @@ function postBoard(req, res) {
   console.log('data in controller post is ', req.body);
   models.saveBoard(req.body, (err, result) => {
     if (err) {
-      console.log('err in controller get is ', err);
+      console.log('err in controller post is ', err);
       res.status(404).send();
     } else {
-      res.status(201).send();
+      res.status(201).send(req.body);
     }
   })
 }
