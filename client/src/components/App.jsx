@@ -1,6 +1,7 @@
 import React from 'react';
 import Board from './Board.jsx';
 import _ from 'underscore';
+import axios from 'axios';
 
 const { useState, useEffect } = React;
 
@@ -32,7 +33,8 @@ function App() {
         result.push('gray');
       }
       if (res[i] === 'brick') {
-        result.push('#cc474b');
+        // result.push('#cc474b');
+        result.push('#C04000');
       }
       if (res[i] === 'wood') {
         result.push('#355E3B');
@@ -41,7 +43,8 @@ function App() {
         result.push('#FFCC00');
       }
       if (res[i] === 'sheep') {
-        result.push('seashell');
+        // result.push('seashell');
+        result.push('#98FB98');
       }
     }
     setColors(result);
@@ -65,6 +68,25 @@ function App() {
     getColors(sources);
   }
 
+  const saveBoard = () => {
+    let data = {
+      numbers: numbers,
+      resources: resources,
+      colors: colors
+    }
+    axios.post('http://localhost:3000/boards', data)
+      .then((res) => {
+        console.log('successful post request in save')
+      })
+      .catch((err) => {
+        console.log('err in save ', err)
+      });
+  }
+
+  useEffect(() => {
+    shuffleNumbers();
+  }, [])
+
   return (
     <div className="page">
       <h1 className="title">catan board generator</h1>
@@ -73,7 +95,7 @@ function App() {
         <button className="btn" onClick={shuffleNumbers}>generate random board</button>
       </div>
       <div className="btn-div">
-        <button className="btn">save this board</button>
+        <button className="btn" onClick={saveBoard}>save this board</button>
       </div>
       <div>
         < Board numbers={numbers} resources={resources} colors={colors} />
