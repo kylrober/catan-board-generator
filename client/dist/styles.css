@@ -1,8 +1,10 @@
 .page {
   align-items: center;
   justify-content: center;
-  background-color: #78C5DC;
-  height: 650px;
+  /* background-color: #78C5DC; */
+  background-color: #4fa6eb;
+  height: 700px;
+  width: 100%;
 }
 
 .board {
@@ -40,15 +42,15 @@
 .row {
   position: relative;
   text-align: center;
-  margin: -30px;
+  margin: -60px;
 }
 
 .hex {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   font-size: 150px;
   text-align: center;
   stroke-width: 3px;
-  margin-left: -7px;
-  margin-right: -7px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
