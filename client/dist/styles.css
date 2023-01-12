@@ -1,0 +1,172 @@
+.page {
+  /* display: grid; */
+  align-items: center;
+  justify-content: center;
+  background-color: #78C5DC;
+  height: 450px;
+}
+
+.board {
+  margin: 25px;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  font-size: 50px;
+}
+
+.author {
+  text-align: center;
+  font-size: 25px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.btn-div {
+  text-align: center;
+  margin: 5px;
+}
+
+.btn {
+  width: fit-content;
+}
+
+.row {
+  position: relative;
+  text-align: center;
+}
+
+.p0 {
+  background-color: #EADDCA;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p1 {
+  background-color: gray;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p2 {
+  background-color: #cc474b;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p3 {
+  background-color: forestgreen;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p4 {
+  background-color: #FFCC00;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p5{
+  background-color: seashell;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p6 {
+  background-color: #EADDCA;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p7 {
+  background-color: gray;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p8 {
+  background-color: #cc474b;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p9 {
+  background-color: forestgreen;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p10 {
+  background-color: seashell;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p11 {
+  background-color: gray;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p12 {
+  background-color: #cc474b;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p13 {
+  background-color: forestgreen;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p14 {
+  background-color: #FFCC00;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p15{
+  background-color: seashell;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p16 {
+  background-color: #EADDCA;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p17 {
+  background-color: gray;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.p18 {
+  background-color: #cc474b;
+  border: 1px solid;
+  margin: 10px;
+  font-size: 30px;
+}
+
