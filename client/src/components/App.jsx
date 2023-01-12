@@ -25,7 +25,8 @@ function App() {
     const result = [];
     for (let i = 0; i < res.length; i++) {
       if (res[i] === 'desert') {
-        result.push('#EADDCA');
+        // result.push('#EADDCA');
+        result.push('tan');
       }
       if (res[i] === 'stone') {
         result.push('gray');
@@ -34,7 +35,7 @@ function App() {
         result.push('#cc474b');
       }
       if (res[i] === 'wood') {
-        result.push('forestgreen');
+        result.push('#355E3B');
       }
       if (res[i] === 'wheat') {
         result.push('#FFCC00');
